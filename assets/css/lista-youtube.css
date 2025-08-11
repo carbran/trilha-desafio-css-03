@@ -1,0 +1,71 @@
+@import url("./reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Roboto;
+}
+
+body {
+    background: #F9F9F9;
+}
+
+header {
+    background: white;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#menu-lateral {
+    min-width: 146px;
+    min-height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu {
+    height: 24px;
+}
+
+#pesquisa {
+    margin: 0 16px;
+}
+
+#campo-pesquisa {
+    border: 1px solid #CCCCCC;
+    width: 404px;
+    height: 40px;
+    position: relative;
+}
+
+#pesquisa img {
+    width: 57px;
+    height: 38px;
+    position: absolute;
+    right: 0;
+}
+
+#lupa {
+    object-fit: scale-down;
+    height: 38px;
+    width: 57px;
+    border: 1px solid #CCCCCC;
+    background: #F8F8F8;
+}
+
+#menu-perfil {
+    min-width: 130px;
+    min-height: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-perfil img {
+    height: 24px;
+    width: 24px;
+}
