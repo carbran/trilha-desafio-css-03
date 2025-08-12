@@ -69,3 +69,51 @@ header {
     height: 24px;
     width: 24px;
 }
+
+main {
+    display: grid;
+    grid-template:  
+        "sidebar main main main main"
+        "sidebar main main main main"
+        "sidebar main main main main"
+        / 2fr 8fr;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    margin: 20px;
+    display: inline-flex;
+    justify-content: start;
+    min-width: 210px;
+}
+
+.item {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.item img {
+    width: 24px;
+    height: 24px;
+    padding-right: 25px;
+}
+
+#grid {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+#grid h2 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#grid p {
+    font-weight: 400;
+    font-size: 12px;
+}
